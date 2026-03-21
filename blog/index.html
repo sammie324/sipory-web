@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<!-- SEO -->
+<title>Sipory Blog — Coffee Ordering Tips, Drink Guides & Recommendations</title>
+<meta name="description" content="Learn what to order at Starbucks, discover new coffee drinks, track your caffeine, and become a confident coffee orderer. Tips and guides from Sipory.">
+<link rel="canonical" href="https://sipory.app/blog/">
+<meta name="google-site-verification" content="Nq8CVaSXa7mU85jRDNCTKMtC7vP8G5xlZT__RKFQF6w" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sipory.app/blog/">
+<meta property="og:title" content="Sipory Blog — Coffee Ordering Tips & Drink Guides">
+<meta property="og:description" content="Learn what to order at coffee shops, discover new drinks, and become a confident orderer.">
+<meta property="og:image" content="https://sipory.app/og-image.png">
+<meta property="og:site_name" content="Sipory">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sipory Blog — Coffee Ordering Tips & Drink Guides">
+<meta name="twitter:description" content="Learn what to order at coffee shops, discover new drinks, and become a confident orderer.">
+<meta name="twitter:image" content="https://sipory.app/og-image.png">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/og-image.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='50' cy='60' rx='38' ry='50' stroke='%231A1816' stroke-width='8' fill='none'/%3E%3Cpath d='M50 10 C35 35,35 55,50 60 C65 65,65 85,50 110' stroke='%231A1816' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Schema: Blog -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Sipory Blog",
+  "description": "Coffee ordering tips, drink guides, and recommendations from Sipory.",
+  "url": "https://sipory.app/blog/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sipory",
+    "url": "https://sipory.app",
+    "logo": "https://sipory.app/og-image.png"
+  }
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F2F0EA;
+  --surface: #EBE9E4;
+  --card: #FDFCFB;
+  --border: #D6D3CD;
+  --walnut-bg: #1A1816;
+  --walnut-text: #EAE8E4;
+  --brass: #BFA07A;
+  --text-primary: #292524;
+  --text-secondary: #57534E;
+  --text-tertiary: #78716C;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+::selection { background: var(--brass); color: #fff; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans); background: var(--bg); color: var(--text-primary);
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+.grain {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+/* NAV */
+.nav { position: fixed; top: 0; width: 100%; z-index: 100; padding: 12px 24px; }
+.nav-inner {
+  max-width: 1080px; margin: 0 auto;
+  background: rgba(242, 240, 234, 0.55); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(235, 233, 228, 0.4); border-radius: 40px; padding: 0 24px; height: 52px;
+  display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;
+}
+.nav-inner.scrolled { background: rgba(242, 240, 234, 0.88); border-color: var(--surface); box-shadow: 0 2px 20px rgba(41,37,36,0.05); }
+.nav-logo { font-family: var(--serif); font-size: 20px; font-weight: 600; color: var(--text-primary); letter-spacing: -0.5px; display: flex; align-items: center; gap: 6px; }
+.nav-links { display: flex; align-items: center; gap: 24px; }
+.nav-links a { font-family: var(--sans); font-size: 12px; font-weight: 500; color: var(--text-secondary); transition: color 0.2s; }
+.nav-links a:hover { color: var(--text-primary); }
+.nav-cta {
+  font-family: var(--sans); font-size: 12px; font-weight: 600; color: var(--walnut-text) !important;
+  background: var(--walnut-bg); padding: 7px 18px; border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(26,24,22,0.18); transition: all 0.2s;
+}
+.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(26,24,22,0.25); }
+@media (max-width: 640px) {
+  .nav-links a:not(.nav-cta) { display: none; }
+  .nav { padding: 10px 12px; }
+  .nav-inner { padding: 0 16px; height: 48px; }
+}
+
+/* HERO */
+.blog-hero { padding: 140px 0 60px; text-align: center; position: relative; z-index: 1; }
+.blog-hero .label { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: var(--brass); margin-bottom: 14px; }
+.blog-hero h1 { font-family: var(--serif); font-size: clamp(32px, 5vw, 48px); font-weight: 500; color: var(--text-primary); line-height: 1.15; margin-bottom: 16px; letter-spacing: -0.5px; }
+.blog-hero p { font-family: var(--sans); font-size: clamp(15px, 2vw, 17px); color: var(--text-secondary); line-height: 1.65; max-width: 520px; margin: 0 auto; font-weight: 300; }
+.rule { width: 40px; height: 1px; background: var(--brass); margin: 24px auto 0; opacity: 0.45; }
+
+/* BLOG GRID */
+.blog-section { padding: 0 0 80px; position: relative; z-index: 1; }
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+.blog-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 4px;
+  overflow: hidden; transition: all 0.3s ease; display: flex; flex-direction: column;
+}
+.blog-card:hover { box-shadow: 0 12px 32px rgba(26,24,22,0.08); transform: translateY(-4px); border-color: #D8CFC0; }
+.blog-card-img {
+  height: 200px; background: linear-gradient(135deg, var(--surface) 0%, #D4C8B8 100%);
+  overflow: hidden; position: relative;
+}
+.blog-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.blog-card:hover .blog-card-img img { transform: scale(1.03); }
+.blog-card-category {
+  position: absolute; top: 12px; left: 12px;
+  font-family: var(--sans); font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+  background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); padding: 4px 10px; border-radius: 3px;
+  color: var(--brass);
+}
+.blog-card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+.blog-card-meta { font-family: var(--sans); font-size: 11px; color: var(--text-tertiary); margin-bottom: 8px; }
+.blog-card-title { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--text-primary); line-height: 1.3; margin-bottom: 8px; }
+.blog-card-excerpt { font-family: var(--sans); font-size: 13px; color: var(--text-secondary); line-height: 1.65; flex: 1; }
+.blog-card-link {
+  font-family: var(--sans); font-size: 12px; font-weight: 600; color: var(--brass);
+  margin-top: 16px; display: flex; align-items: center; gap: 4px; transition: gap 0.2s;
+}
+.blog-card:hover .blog-card-link { gap: 8px; }
+
+/* FEATURED */
+.featured-card {
+  grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr;
+  background: var(--card); border: 1px solid var(--border); border-radius: 4px;
+  overflow: hidden; transition: all 0.3s ease;
+}
+.featured-card:hover { box-shadow: 0 12px 32px rgba(26,24,22,0.08); transform: translateY(-4px); border-color: #D8CFC0; }
+.featured-card .blog-card-img { height: 100%; min-height: 280px; }
+.featured-card:hover .blog-card-img img { transform: scale(1.03); }
+.featured-card .blog-card-body { padding: 32px; justify-content: center; }
+.featured-card .blog-card-title { font-size: 24px; }
+@media (max-width: 768px) {
+  .featured-card { grid-template-columns: 1fr; }
+  .featured-card .blog-card-img { min-height: 200px; }
+  .blog-grid { grid-template-columns: 1fr; }
+}
+
+/* FOOTER */
+.footer { background: var(--walnut-bg); border-top: 1px solid rgba(234,232,228,0.06); padding: 48px 24px 32px; position: relative; z-index: 1; }
+.footer-inner { max-width: 1080px; margin: 0 auto; }
+.footer-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 24px; margin-bottom: 32px; }
+.footer-brand { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--walnut-text); display: flex; align-items: center; gap: 6px; }
+.footer-desc { font-family: var(--sans); font-size: 12px; color: rgba(234,232,228,0.35); margin-top: 8px; max-width: 260px; line-height: 1.5; }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { font-family: var(--sans); font-size: 13px; color: rgba(234,232,228,0.4); transition: color 0.2s; }
+.footer-links a:hover { color: rgba(234,232,228,0.7); }
+.footer-bottom { border-top: 1px solid rgba(234,232,228,0.06); padding-top: 20px; font-family: var(--sans); font-size: 11px; color: rgba(234,232,228,0.25); }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner" id="nav-inner">
+    <a href="/" class="nav-logo">
+      <svg width="22" height="26" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="50" cy="60" rx="38" ry="50" stroke="currentColor" stroke-width="8" fill="none"/>
+        <path d="M50 10 C35 35, 35 55, 50 60 C65 65, 65 85, 50 110" stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round"/>
+      </svg>
+      Sipory
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/blog/" style="color:var(--text-primary);font-weight:600">Blog</a>
+      <a href="https://apps.apple.com/us/app/sipory/id6758753398" class="nav-cta">Download</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BLOG HERO -->
+<section class="blog-hero">
+  <div class="inner">
+    <p class="label">The Sipory Blog</p>
+    <h1>Coffee guides, drink tips<br>& ordering confidence.</h1>
+    <p>Everything you need to order better coffee — from Starbucks hacks to caffeine science.</p>
+    <div class="rule"></div>
+  </div>
+</section>
+
+<!-- BLOG GRID -->
+<section class="blog-section">
+  <div class="inner">
+    <div class="blog-grid">
+
+      <!-- FEATURED POST (first article goes here) -->
+      <!--
+      <a href="/blog/what-to-order-at-starbucks.html" class="featured-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/what-to-order-starbucks.jpg" alt="What to order at Starbucks based on your taste preferences">
+          <span class="blog-card-category">Ordering Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 8 min read</span>
+          <h2 class="blog-card-title">What to Order at Starbucks If You Don't Know What to Get</h2>
+          <p class="blog-card-excerpt">Staring at the menu board with 40+ options? Here's a simple framework to find your perfect Starbucks drink based on what you actually like.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+      -->
+
+      <!-- REGULAR POST TEMPLATE — duplicate for each article -->
+      <!--
+      <a href="/blog/SLUG.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/SLUG.jpg" alt="DESCRIPTIVE ALT TEXT">
+          <span class="blog-card-category">CATEGORY</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · X min read</span>
+          <h2 class="blog-card-title">ARTICLE TITLE</h2>
+          <p class="blog-card-excerpt">EXCERPT — 1-2 sentences summarizing the article.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+      -->
+
+      <!-- PLACEHOLDER CARDS (remove once real articles are added) -->
+      <a href="/blog/what-to-order-at-starbucks.html" class="featured-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/what-to-order-at-starbucks.jpg" alt="Overhead view of popular Starbucks drinks arranged on a warm wooden surface">
+          <span class="blog-card-category">Ordering Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 11 min read</span>
+          <h2 class="blog-card-title">What to Order at Starbucks: The Complete Guide for Every Type of Person</h2>
+          <p class="blog-card-excerpt">Not sure what to order? We organized the entire Starbucks menu by who you are — first-timer, non-coffee drinker, budget shopper, caffeine seeker — with prices, caffeine counts, and exact order scripts.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/starbucks-drinks-no-coffee.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/starbucks-drinks-no-coffee.jpg" alt="Colorful non-coffee Starbucks drinks including a pink drink, matcha latte, and chai">
+          <span class="blog-card-category">Beginner Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 9 min read</span>
+          <h2 class="blog-card-title">What to Order at Starbucks If You Don't Like Coffee</h2>
+          <p class="blog-card-excerpt">Don't like coffee? Roughly 75% of Starbucks sales are cold drinks — many without coffee. Here are the best non-coffee options with prices, caffeine counts, and order scripts.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/coffee-drinks-for-beginners.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/coffee-drinks-for-beginners.jpg" alt="Beginner-friendly coffee drinks including a latte, cappuccino, and iced coffee on a café counter">
+          <span class="blog-card-category">Beginner Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">Coffee Drinks for Beginners: How to Order Without the Anxiety</h2>
+          <p class="blog-card-excerpt">Every coffee drink explained in plain English, plus a universal ordering formula that works at any café. Five starter drink recommendations ranked from "barely coffee" to "the real thing."</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/caffeine-in-starbucks-drinks.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/caffeine-in-starbucks-drinks.jpg" alt="Various Starbucks drinks arranged from highest to lowest caffeine content">
+          <span class="blog-card-category">Caffeine Science</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">How Much Caffeine Is in Your Starbucks Order? A Complete Guide</h2>
+          <p class="blog-card-excerpt">The full Starbucks caffeine chart — every drink, every size, ranked by milligrams and caffeine-per-dollar. Plus how Starbucks compares to Dunkin' and daily limit guidance.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/cheapest-starbucks-drinks.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/cheapest-starbucks-drinks.jpg" alt="Affordable Starbucks drinks including brewed coffee, shaken espresso, and caffè misto with price tags">
+          <span class="blog-card-category">Ordering Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 9 min read</span>
+          <h2 class="blog-card-title">The Cheapest Starbucks Drinks That Actually Taste Good</h2>
+          <p class="blog-card-excerpt">Every budget hack that works in 2026 — from $2.75 drinks to free refills to the new three-tier Rewards system. Save $800+ a year without sacrificing taste.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/when-to-stop-drinking-coffee.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/when-to-stop-drinking-coffee.jpg" alt="A clock next to a coffee cup showing the concept of a caffeine cutoff time for better sleep">
+          <span class="blog-card-category">Caffeine Science</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 9 min read</span>
+          <h2 class="blog-card-title">When to Stop Drinking Coffee: The Science of Caffeine and Sleep</h2>
+          <p class="blog-card-excerpt">Caffeine has a half-life of 5–6 hours. Here's exactly when to stop based on your bedtime — plus which drinks are safe for late afternoon and which aren't.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/iced-coffee-vs-cold-brew.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/iced-coffee-vs-cold-brew.jpg" alt="Three cold coffee drinks side by side showing iced coffee, cold brew, and nitro cold brew">
+          <span class="blog-card-category">Drink Deep Dive</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 9 min read</span>
+          <h2 class="blog-card-title">Iced Coffee vs. Cold Brew vs. Nitro: What's the Difference?</h2>
+          <p class="blog-card-excerpt">They're all cold coffee, but they taste completely different. Here's how they're made, compared on caffeine and price, and which one is right for you.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/best-coffee-for-studying.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/best-coffee-for-studying.jpg" alt="Cold brew coffee next to notebooks and a laptop on a library desk during a study session">
+          <span class="blog-card-category">College Life</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">Best Coffee Drinks for Studying and All-Nighters</h2>
+          <p class="blog-card-excerpt">The science of caffeine timing, the 5 best study drinks ranked, a sample caffeine schedule for a full study day, and an honest all-nighter strategy.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/what-to-order-at-dunkin.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/what-to-order-at-dunkin.jpg" alt="Popular Dunkin' drinks including iced coffee, cold brew, and a refresher on a counter">
+          <span class="blog-card-category">Ordering Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">What to Order at Dunkin': A Complete First-Timer's Guide</h2>
+          <p class="blog-card-excerpt">The full Dunkin' menu decoded — swirls vs. shots, best drinks by category, prices, caffeine counts, secret menu items, and an honest comparison to Starbucks.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/what-to-order-at-dutch-bros.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/what-to-order-at-dutch-bros.jpg" alt="Colorful Dutch Bros drinks including a Golden Eagle and Blue Rebel energy drink at a drive-thru window">
+          <span class="blog-card-category">Ordering Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">What to Order at Dutch Bros: The Only Guide You Need</h2>
+          <p class="blog-card-excerpt">Signature Faves decoded, 80+ secret menu items, the breve default explained, prices across every category, and why 40% of Dutch Bros orders aren't even coffee.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/best-non-dairy-milk-for-coffee.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/best-non-dairy-milk-for-coffee.jpg" alt="Four glasses of non-dairy milk — oat, almond, soy, and coconut — next to a cup of espresso">
+          <span class="blog-card-category">Drink Deep Dive</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 9 min read</span>
+          <h2 class="blog-card-title">The Best Non-Dairy Milk for Coffee, Ranked</h2>
+          <p class="blog-card-excerpt">Oat, almond, soy, or coconut — ranked by taste, frothing, nutrition, and which drinks each one works best in. All free at major chains now.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/tiktok-starbucks-drinks.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/tiktok-starbucks-drinks.jpg" alt="Colorful viral Starbucks drinks from TikTok including an iced white mocha with cold foam and a matcha drink">
+          <span class="blog-card-category">Trending</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">TikTok Starbucks Drinks That Are Actually Worth Ordering</h2>
+          <p class="blog-card-excerpt">We tested the biggest viral Starbucks drinks and sorted them: worth it, overhyped, and skip. Exact recipes, order scripts, and honest verdicts.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/best-starbucks-drinks-spring-2026.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/best-starbucks-drinks-spring-2026.jpg" alt="New Starbucks spring 2026 drinks including the Toasted Coconut Cream Cold Brew and Iced Ube Coconut Macchiato">
+          <span class="blog-card-category">Seasonal</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">Best Starbucks Drinks for Spring 2026</h2>
+          <p class="blog-card-excerpt">Every new spring drink ranked — from the Toasted Coconut Cream Cold Brew to the Iced Ube Coconut Macchiato. Plus what's coming April 7 and the chai reformulation that changes everything.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/what-is-matcha.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/what-is-matcha.jpg" alt="Vibrant green matcha latte in a clear glass next to a bamboo whisk and bowl of matcha powder">
+          <span class="blog-card-category">Trending</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">What Is Matcha? Why Everyone Is Obsessed Right Now</h2>
+          <p class="blog-card-excerpt">The $4 billion trend explained — what matcha is, how it compares to coffee, the L-theanine science behind "calm energy," and exactly what to order at every chain.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/protein-coffee-proffee.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/protein-coffee-proffee.jpg" alt="A protein coffee drink next to a shaker bottle and espresso shot showing the proffee trend">
+          <span class="blog-card-category">Trending</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 9 min read</span>
+          <h2 class="blog-card-title">Protein Coffee Is Everywhere — Here's What You Need to Know</h2>
+          <p class="blog-card-excerpt">The proffee trend explained: every protein option at Starbucks, Dunkin', and Dutch Bros, the DIY TikTok method done right, and an honest take on whether it's worth it.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/starbucks-syrups-guide.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/starbucks-syrups-guide.jpg" alt="Row of Starbucks syrup bottles including vanilla, caramel, and brown sugar next to customized drinks">
+          <span class="blog-card-category">Drink Deep Dive</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">Every Starbucks Syrup Ranked (And the Best Flavor Combos)</h2>
+          <p class="blog-card-excerpt">All 13 year-round syrups, 5 sauces, seasonal additions, default pump counts by size, and 8 barista-recommended flavor combinations with exact order scripts.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/how-to-customize-starbucks-order.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/how-to-customize-starbucks-order.jpg" alt="A barista customizing a Starbucks drink with syrup pumps and milk">
+          <span class="blog-card-category">Ordering Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">How to Customize Your Starbucks Order Like a Pro</h2>
+          <p class="blog-card-excerpt">Every modification explained — free vs. paid, the ordering formula baristas prefer, 7 customization categories, and 10 specific pro-level orders with scripts.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/college-students-guide-to-coffee.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/college-students-guide-to-coffee.jpg" alt="College student studying in a library with a cold brew coffee, laptop, and textbooks">
+          <span class="blog-card-category">College Life</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">The College Student's Guide to Coffee (Without Going Broke)</h2>
+          <p class="blog-card-excerpt">The real cost of a daily coffee habit, best budget drinks at every chain, three caffeine strategies for college, exam week protocols, and a dorm room setup for under $50.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/what-coffee-should-i-drink.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/what-coffee-should-i-drink.jpg" alt="An assortment of different coffee drinks including lattes, cold brew, matcha, and iced tea on a café table">
+          <span class="blog-card-category">Beginner Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">What Coffee Should I Drink? A Guide for Every Taste</h2>
+          <p class="blog-card-excerpt">Find your perfect drink with 8 persona-matched picks across Starbucks, Dunkin', and Dutch Bros — plus a decision flowchart, master comparison table, and upgrade paths.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/starbucks-secret-menu.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/starbucks-secret-menu.jpg" alt="Colorful custom Starbucks drinks including secret menu creations with cold foam and drizzle">
+          <span class="blog-card-category">Ordering Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 11 min read</span>
+          <h2 class="blog-card-title">The Starbucks Secret Menu: What's Real, What's Worth It, and How to Order</h2>
+          <p class="blog-card-excerpt">15 secret menu drinks rated Worth It, It's Fine, or Skip — with full recipes, order scripts, prices, and the 5 rules for ordering any secret menu drink without annoying your barista.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/dunkin-vs-starbucks.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/dunkin-vs-starbucks.jpg" alt="A Dunkin' iced coffee and a Starbucks iced coffee side by side on a table for comparison">
+          <span class="blog-card-category">Drink Deep Dive</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">Dunkin' vs Starbucks: Price, Caffeine, Taste, and Value Compared</h2>
+          <p class="blog-card-excerpt">Side-by-side 2026 prices, caffeine per dollar, size differences, menu depth, rewards programs, taste profiles, and which chain wins in 8 specific situations.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/best-coffee-for-anxiety.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/best-coffee-for-anxiety.jpg" alt="A calm matcha latte and herbal tea on a wooden table in soft morning light">
+          <span class="blog-card-category">Caffeine Science</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 10 min read</span>
+          <h2 class="blog-card-title">Best Coffee for Anxiety: Low-Caffeine Drinks That Won't Make You Jittery</h2>
+          <p class="blog-card-excerpt">The science of caffeine and anxiety, every café drink ranked by anxiety risk, 6 low-caffeine picks with order scripts, L-theanine explained, and a 2-week protocol for finding your personal threshold.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/starbucks-rewards-guide.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/starbucks-rewards-guide.jpg" alt="Starbucks app showing Rewards Stars balance next to a free drink being redeemed">
+          <span class="blog-card-category">Ordering Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 9 min read</span>
+          <h2 class="blog-card-title">Starbucks Rewards Explained: How to Earn Free Drinks in 2026</h2>
+          <p class="blog-card-excerpt">The new 3-tier system (Green, Gold, Reserve), Star redemption math, the refill policy, Free Mod Monday, Double Star strategies, and exactly how much you save at every purchase frequency.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/starbucks-seasonal-drinks-calendar.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/starbucks-seasonal-drinks-calendar.jpg" alt="Four Starbucks seasonal drinks representing spring, summer, fall, and winter arranged in a row">
+          <span class="blog-card-category">Seasonal</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 9 min read</span>
+          <h2 class="blog-card-title">Starbucks Seasonal Drinks Calendar 2026: Every Launch Date and Menu Window</h2>
+          <p class="blog-card-excerpt">The full 2026 timeline — what's available now, what's coming April 7, PSL return date predictions, holiday menu dates, and which seasonal drinks went permanent.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/personalized-coffee-app.html" class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="/blog/images/personalized-coffee-app.jpg" alt="Person using a coffee recommendation app on their phone while standing in a café line">
+          <span class="blog-card-category">Ordering Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-meta">March 2026 · 8 min read</span>
+          <h2 class="blog-card-title">Why a Personalized Coffee App Changes How You Order</h2>
+          <p class="blog-card-excerpt">87,000+ Starbucks combinations and generic top-10 lists don't cut it. Here's how personalized recommendations match your taste, caffeine needs, budget, and time of day to the right drink.</p>
+          <span class="blog-card-link">Read article →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <span class="footer-brand">
+          <svg width="18" height="22" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="50" cy="60" rx="38" ry="50" stroke="currentColor" stroke-width="8" fill="none"/><path d="M50 10 C35 35, 35 55, 50 60 C65 65, 65 85, 50 110" stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round"/></svg>
+          Sipory
+        </span>
+        <p class="footer-desc">A personal coffee system for the intentional drinker.</p>
+      </div>
+      <div class="footer-links"><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="mailto:support@sipory.app">Support</a><a href="/sitemap.xml" rel="nofollow">Sitemap</a></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Sipory. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script>
+const navInner = document.getElementById('nav-inner');
+window.addEventListener('scroll', () => { navInner.classList.toggle('scrolled', window.scrollY > 40); });
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
